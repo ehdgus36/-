@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B111982D-CE85-62AE-5D7C-07DD3175C546}</ProjectGuid>
+    <ProjectGuid>{73A9CD00-BF46-19EC-568B-B489EBD93554}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,8 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Low Poly Flat Sci Fi Assets\Demo\Scripts\DoubleSlidingDoorController.cs" />
+    <Compile Include="Assets\Low Poly Flat Sci Fi Assets\Demo\Scripts\FlickeringLight.cs" />
     <Compile Include="Assets\script\Enamy.cs" />
+    <Compile Include="Assets\script\EnamySetUpPoint.cs" />
+    <Compile Include="Assets\script\EnamySetUpPointEditor.cs" />
+    <Compile Include="Assets\script\Enamyobj_pool.cs" />
     <Compile Include="Assets\script\PlayerMove.cs" />
+    <None Include="Assets\Low Poly Flat Sci Fi Assets\Documentation\readme.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -594,31 +600,31 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.4f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/zombieGame project/ZombieDefence/청강대 포트 폴리오 RPG/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/zombieGame project/ZombieDefence/청강대 포트 폴리오 RPG/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/zombieGame project/ZombieDefence/청강대 포트 폴리오 RPG/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/zombieGame project/ZombieDefence/청강대 포트 폴리오 RPG/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/zombieGame project/ZombieDefence/청강대 포트 폴리오 RPG/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/zombieGame project/ZombieDefence/청강대 포트 폴리오 RPG/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/zombieGame project/ZombieDefence/청강대 포트 폴리오 RPG/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/zombieGame project/ZombieDefence/청강대 포트 폴리오 RPG/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/zombieGame project/ZombieDefence/청강대 포트 폴리오 RPG/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
