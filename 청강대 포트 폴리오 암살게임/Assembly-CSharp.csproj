@@ -69,6 +69,7 @@
     <Compile Include="Assets\script\EnamySetUpPoint.cs" />
     <Compile Include="Assets\script\EnamySetUpPointEditor.cs" />
     <Compile Include="Assets\script\Enamyobj_pool.cs" />
+    <Compile Include="Assets\script\PlayerAttack.cs" />
     <Compile Include="Assets\script\PlayerMove.cs" />
     <None Include="Assets\Low Poly Flat Sci Fi Assets\Documentation\readme.txt" />
     <Reference Include="UnityEngine">

@@ -13,7 +13,7 @@ class Enemy_Patrol_Point
 }
 public enum EnamyState
 { 
-Idle,Patrol,Tracking,Attack,find, Searching
+Idle,Patrol,Tracking,Attack,find, Searching,die
 }
 public class Enamy : MonoBehaviour
 {
@@ -30,8 +30,8 @@ public class Enamy : MonoBehaviour
     public GameObject player;
     public LayerMask layer;
     public float findTime;
-    float times;
-   
+    public float times;
+    bool look=true;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,11 +64,16 @@ public class Enamy : MonoBehaviour
                 break;
             case EnamyState.find:
                 findUpdate();
+                
                 break;
             case EnamyState.Tracking:
                 TrackingUpdate();
                 break;
             case EnamyState.Attack:
+                break;
+            case EnamyState.die:
+                state = EnamyState.Attack;
+                anime.SetTrigger("die");
                 break;
 
         }
@@ -86,11 +91,10 @@ public class Enamy : MonoBehaviour
     
     }
     void findUpdate()
-    {       
+    {
         times += Time.deltaTime;
-        if (times >= findTime )
+        if (times >= findTime)
         {
-           
             state = EnamyState.Tracking;
         }
     }
@@ -136,9 +140,9 @@ public class Enamy : MonoBehaviour
                 if (Physics.Raycast(transform.position, dir,out hit, angleView))
                 {
 
-                    if (hit.transform.gameObject.tag == "Player")
+                    if (hit.transform.gameObject.tag == "Player"&&look)
                     {
-                        
+                        look = false;
                         state = EnamyState.find;
                     }
                     
@@ -159,5 +163,10 @@ public class Enamy : MonoBehaviour
     void changeState(EnamyState state)
     { 
     
+    }
+    void die()
+    {
+        state = EnamyState.die;
+        anime.SetTrigger("die");
     }
 }

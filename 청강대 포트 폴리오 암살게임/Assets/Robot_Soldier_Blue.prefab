@@ -1330,6 +1330,10 @@ MonoBehaviour:
   create_enemy: {fileID: 0}
   targe_patrol_Point: 0
   player: {fileID: 0}
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
+  findTime: 3
 --- !u!195 &5270713642177189695
 NavMeshAgent:
   m_ObjectHideFlags: 0

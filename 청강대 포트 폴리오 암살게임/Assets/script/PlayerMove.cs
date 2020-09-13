@@ -17,6 +17,7 @@ public class PlayerMove : MonoBehaviour
     {
         if (!Input.GetKey(KeyCode.LeftShift))
         {
+            anim.SetBool("walk", false);
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
             {
                 speed = 3;
@@ -28,8 +29,10 @@ public class PlayerMove : MonoBehaviour
                 anim.SetBool("run", false);
             }
         }
+        
         else if (Input.GetKey(KeyCode.LeftShift))
         {
+            anim.SetBool("run", false);
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
             {
                 speed = 1f;   
@@ -41,6 +44,7 @@ public class PlayerMove : MonoBehaviour
                 anim.SetBool("walk", false);
             }
         }
+       
     }
     private void Move()
     {
