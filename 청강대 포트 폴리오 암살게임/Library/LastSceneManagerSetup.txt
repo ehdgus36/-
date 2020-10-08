@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Free LowPoly SciFi Pack/Scenes/DemoScene.unity
+- path: Assets/Scenes/menu.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

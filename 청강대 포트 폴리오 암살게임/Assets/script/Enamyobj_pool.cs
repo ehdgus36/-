@@ -15,7 +15,7 @@ public class Enamyobj_pool : MonoBehaviour
         for (int i = 0; i < enemys_objpool.Length; i++)
         {
             enemys_objpool[i] = Instantiate(enemy, transform.position, Quaternion.identity);
-            enemy.GetComponent<Enamy>().player = player;
+            
             enemys_objpool[i].SetActive(false);
         }
     }   

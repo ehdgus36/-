@@ -69,9 +69,14 @@
     <Compile Include="Assets\script\EnamySetUpPoint.cs" />
     <Compile Include="Assets\script\EnamySetUpPointEditor.cs" />
     <Compile Include="Assets\script\Enamyobj_pool.cs" />
+    <Compile Include="Assets\script\Player.cs" />
     <Compile Include="Assets\script\PlayerAttack.cs" />
     <Compile Include="Assets\script\PlayerMove.cs" />
+    <Compile Include="Assets\script\Scene_Mamager.cs" />
+    <Compile Include="Assets\script\sub_SceneManager.cs" />
+    <None Include="Assets\SimpleLowPolyNature\Readme.txt" />
     <None Include="Assets\Low Poly Flat Sci Fi Assets\Documentation\readme.txt" />
+    <None Include="Assets\SimpleLowPolyNature\Shaders\SimpleWater.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -603,6 +608,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -620,6 +628,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Portfolio Project/청강대 포트 폴리오 암살게임/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>

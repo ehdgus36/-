@@ -17,32 +17,37 @@ public class PlayerMove : MonoBehaviour
     {
         if (!Input.GetKey(KeyCode.LeftShift))
         {
-            anim.SetBool("walk", false);
+            
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
             {
                 speed = 3;
                 Move();
                 anim.SetBool("run", true);
+                anim.SetBool("idle", false);
             }
             else
             {
                 anim.SetBool("run", false);
+                anim.SetBool("idle", true);
             }
-        }
-        
+            anim.SetBool("walk", false);
+        }        
         else if (Input.GetKey(KeyCode.LeftShift))
         {
-            anim.SetBool("run", false);
+           
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
             {
                 speed = 1f;   
                 Move();
                 anim.SetBool("walk", true);
+                anim.SetBool("idle", false);
             }
             else
             {
                 anim.SetBool("walk", false);
+                anim.SetBool("idle", true);
             }
+            anim.SetBool("run", false);
         }
        
     }
